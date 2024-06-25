@@ -1,0 +1,35 @@
+$color-Accent: #F16718;
+$color-AccentHover: #FF9B62;
+$color-Titles: #162542;
+$color-Text: #7B8BAD;
+$color-GreyBox: #E8EFF2;
+$color-White: #FFFFFF;
+
+
+body {
+    margin: 0;
+    font-family: "Barlow", sans-serif;
+}
+
+p {
+    color: $color-Text;
+    line-height: 1.6;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+    color: $color-Titles;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+* :first-child {
+    margin-top: 0;
+}
+
+* :last-child
+{
+    margin-bottom: 0;
+}
