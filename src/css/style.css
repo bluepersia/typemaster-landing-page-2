@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  font-family: "Barlow", sans-serif;
+}
+
+p {
+  color: #7B8BAD;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #162542;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+* :first-child {
+  margin-top: 0;
+}
+
+* :last-child {
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
