@@ -345,5 +345,20 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: space-between;
   }
 }
+.footer {
+  text-align: center;
+  padding-bottom: 3.125rem;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding-bottom: 2.68rem;
+  }
+}
+@media (min-width: 1440px) {
+  .footer {
+    padding-bottom: 2.5rem;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
