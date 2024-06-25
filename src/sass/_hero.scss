@@ -1,0 +1,149 @@
+
+
+
+.hero
+{
+    padding-left: 6.4%;
+    margin-bottom: 1.5rem;
+
+    &__content
+     {
+        padding-right: 6.4%;
+        margin-bottom: 4rem;
+        max-width: 445px;
+     }
+
+
+     &__title
+     {
+        font-size: 3rem;
+     }
+
+     &__btns
+     {
+        display: flex;
+        align-items: center;
+        gap:2rem;
+     }
+     &__btn
+     {
+        @extend .btn;
+        background-color: $color-Accent;
+        color:$color-White;
+
+        &:hover
+        {
+            background-color: $color-AccentHover;
+        }
+     }
+
+     &__release
+     {
+        margin-top: 0;
+        text-transform: uppercase;
+        font-weight: bold;
+     }
+
+     &__img 
+     {
+        &-tablet, &-desktop 
+        {
+            @extend.img;
+            display: none;
+        }
+
+        &-mobile
+        {
+            @extend .img;
+            display: block;
+            height: 372px;
+        }
+     }
+}
+
+.img 
+{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+@media (min-width:768px)
+{
+    .hero
+    {
+        padding-left: 5.2%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap:4.3rem;
+        &__content
+        {
+            padding: 3.75rem 0;
+        }
+
+        &__img
+        {
+            &-mobile
+            {
+                display: none;
+            }
+
+            &-tablet 
+            {
+                display: block;
+                height: 480px;
+            }
+           
+        }
+    }
+}
+
+
+
+@media (min-width: 1440px)
+{
+    .hero
+    {
+        padding: 0 11.4%;
+        gap:7.8rem;
+        position: relative;
+
+        &::after 
+        {
+            content: '';
+            width: 255px;
+            height: 240px;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            transform: translateX(50%);
+            background-color: $color-GreyBox;
+            border-radius: 20px;
+        }
+
+        &__content
+        {
+            width: 40%;
+        }
+        &__title
+        {
+            font-size: 3.5rem;
+        }
+
+        &__img
+        {
+            &-tablet 
+            {
+                display: none;
+            }
+
+            &-desktop
+            {
+                display: block;
+                width: 48.6%;
+                height: 480px;
+            }
+        }
+    }
+}
