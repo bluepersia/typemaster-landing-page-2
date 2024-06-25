@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
 }
 
-.btn, .header__btn {
+.btn, .hero__btn, .header__btn {
   font-weight: bold;
   text-transform: uppercase;
   padding: 0.6875rem 0.84rem;
@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (min-width: 768px) {
-  .btn, .header__btn {
+  .btn, .hero__btn, .header__btn {
     padding: 1rem 1.625rem;
   }
 }
@@ -66,6 +66,100 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 1440px) {
   .header {
     padding: 3.43rem 11.4% 5.18rem;
+  }
+}
+.hero {
+  padding-left: 6.4%;
+  margin-bottom: 1.5rem;
+}
+.hero__content {
+  padding-right: 6.4%;
+  margin-bottom: 4rem;
+  max-width: 445px;
+}
+.hero__title {
+  font-size: 3rem;
+}
+.hero__btns {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.hero__btn {
+  background-color: #F16718;
+  color: #FFFFFF;
+}
+.hero__btn:hover {
+  background-color: #FF9B62;
+}
+.hero__release {
+  margin-top: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.hero__img-tablet, .hero__img-desktop {
+  display: none;
+}
+.hero__img-mobile {
+  display: block;
+  height: 372px;
+}
+
+.img, .hero__img-tablet, .hero__img-desktop, .hero__img-mobile {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding-left: 5.2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4.3rem;
+  }
+  .hero__content {
+    padding: 3.75rem 0;
+  }
+  .hero__img-mobile {
+    display: none;
+  }
+  .hero__img-tablet {
+    display: block;
+    height: 480px;
+  }
+}
+@media (min-width: 1440px) {
+  .hero {
+    padding: 0 11.4%;
+    gap: 7.8rem;
+    position: relative;
+  }
+  .hero::after {
+    content: "";
+    width: 255px;
+    height: 240px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transform: translateX(50%);
+    background-color: #E8EFF2;
+    border-radius: 20px;
+  }
+  .hero__content {
+    width: 40%;
+  }
+  .hero__title {
+    font-size: 3.5rem;
+  }
+  .hero__img-tablet {
+    display: none;
+  }
+  .hero__img-desktop {
+    display: block;
+    width: 48.6%;
+    height: 480px;
   }
 }
 
