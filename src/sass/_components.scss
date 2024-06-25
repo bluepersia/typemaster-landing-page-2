@@ -1,0 +1,22 @@
+
+
+.btn
+{
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.6875rem .84rem;
+    border:none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+
+@media (min-width:768px)
+{
+    .btn
+    {
+        padding: 1rem 1.625rem;
+    }
+}
+
