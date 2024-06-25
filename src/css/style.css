@@ -25,4 +25,48 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
 }
 
+.btn, .header__btn {
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.6875rem 0.84rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+@media (min-width: 768px) {
+  .btn, .header__btn {
+    padding: 1rem 1.625rem;
+  }
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.6875rem 6.4% 4rem;
+}
+.header__logo {
+  width: 40px;
+  height: 40px;
+}
+.header__btn {
+  background-color: #E8EFF2;
+}
+.header__btn:hover {
+  background-color: #162542;
+  color: #FFFFFF;
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: 2.5rem 5.2% 3.875rem;
+  }
+}
+@media (min-width: 1440px) {
+  .header {
+    padding: 3.43rem 11.4% 5.18rem;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
