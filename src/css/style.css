@@ -296,5 +296,54 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: auto;
   }
 }
+.features {
+  text-align: center;
+  padding: 0 6.4%;
+  margin-bottom: 6rem;
+}
+.features__list {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(auto, 339px));
+  justify-content: center;
+  gap: 4rem;
+}
+.features__icon-container {
+  width: 65px;
+  height: 65px;
+  background-color: #F16718;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .features {
+    padding: 0 5.2%;
+    text-align: left;
+  }
+  .features__list {
+    justify-content: start;
+    row-gap: 4.5rem;
+    column-gap: 0.6rem;
+  }
+  .features__icon-container {
+    margin-left: 0;
+  }
+}
+@media (min-width: 1440px) {
+  .features {
+    padding: 0 11.4%;
+  }
+  .features__list {
+    column-gap: 1.875rem;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 255px));
+    justify-content: space-between;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
